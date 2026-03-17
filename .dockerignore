@@ -1,0 +1,34 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build outputs
+.next
+out
+dist
+.turbo
+
+# Local env (use docker-compose.env.example)
+.env
+.env.*
+!.env.example
+
+# Git
+.git
+.gitignore
+
+# IDE and misc
+.cursor
+.vscode
+*.md
+!README.md
+
+# Test and coverage
+coverage
+*.test.ts
+*.spec.ts
+__tests__
+
+# Documentation
+documentation

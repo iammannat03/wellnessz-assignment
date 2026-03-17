@@ -1,0 +1,17 @@
+{
+  "$schema": "https://tsoa-community.github.io/docs/schema.json",
+  "entryFile": "src/server.ts",
+  "controllerPathGlobs": ["src/controllers/**/*.ts"],
+  "spec": {
+    "outputDirectory": "dist/openapi",
+    "specVersion": 3,
+    "name": "WellnessZ Challenge Tracker API",
+    "description": "REST API for the WellnessZ Challenge Tracker assignment"
+  },
+  "routes": {
+    "routesDir": "src/generated",
+    "middleware": "express",
+    "esm": true,
+    "authenticationModule": "./src/authentication.ts"
+  }
+}
