@@ -4,6 +4,7 @@ A full-stack wellness challenge tracker where users can register, join habit-bas
 
 ## Tech Stack
 
+
 | Layer     | Technology                     |
 | --------- | ------------------------------ |
 | Backend   | Node.js, Express 5             |
@@ -13,6 +14,7 @@ A full-stack wellness challenge tracker where users can register, join habit-bas
 | API Docs  | OpenAPI / Swagger (tsoa)       |
 | Container | Docker, docker-compose         |
 | Frontend  | Next.js 16 (App Router)        |
+
 
 ## Prerequisites
 
@@ -26,7 +28,7 @@ A full-stack wellness challenge tracker where users can register, join habit-bas
 ### 1. Clone and Install
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/iammannat03/wellnessz-assignment.git
 cd wellnessz-assignment
 bun install   # or: npm install
 ```
@@ -41,6 +43,7 @@ cp .env.example .env
 
 **Server env vars** (required for backend):
 
+
 | Variable            | Description                           | Example (local)                       |
 | ------------------- | ------------------------------------- | ------------------------------------- |
 | `MONGO_URI`         | MongoDB connection string             | `mongodb://localhost:27017/wellnessz` |
@@ -50,11 +53,14 @@ cp .env.example .env
 | `CORS_ORIGIN`       | Allowed origins (optional)            | `http://localhost:3000`               |
 | `CACHE_TTL_SECONDS` | Redis cache TTL (optional)            | `60`                                  |
 
+
 **Frontend env vars** (required for web app):
+
 
 | Variable              | Description  | Example                 |
 | --------------------- | ------------ | ----------------------- |
 | `NEXT_PUBLIC_API_URL` | API base URL | `http://localhost:4000` |
+
 
 Create `apps/web/.env.local` with `NEXT_PUBLIC_API_URL` when running the frontend separately.
 
@@ -229,9 +235,11 @@ Runs on [http://localhost:3000](http://localhost:3000).
 
 ### Environment Variables
 
+
 | Variable              | Required | Description          |
 | --------------------- | -------- | -------------------- |
 | `NEXT_PUBLIC_API_URL` | Yes      | Backend API base URL |
+
 
 Create `apps/web/.env.local`:
 
@@ -241,6 +249,7 @@ NEXT_PUBLIC_API_URL=http://localhost:4000
 
 ### Implemented Pages
 
+
 | Route              | Description                                 |
 | ------------------ | ------------------------------------------- |
 | `/`                | Landing / hero (redirects if logged in)     |
@@ -249,6 +258,7 @@ NEXT_PUBLIC_API_URL=http://localhost:4000
 | `/challenges`      | Browse public challenges, create new        |
 | `/challenges/[id]` | Challenge detail, leaderboard, log progress |
 | `/my/challenges`   | User's joined challenges                    |
+
 
 ---
 
@@ -265,3 +275,4 @@ NEXT_PUBLIC_API_URL=http://localhost:4000
 ├── .env.example
 └── README.md
 ```
+
